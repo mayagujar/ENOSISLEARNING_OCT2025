@@ -1,0 +1,170 @@
+﻿.wrapper {
+    box-sizing:border-box;
+    display:grid;
+    grid-template-areas:"left right";
+    grid-template-columns:1.8fr 1fr;
+    width:100%;
+    background-color:transparent;
+}
+.left-side
+{
+    grid-area:left;
+    background-color:transparent;
+    margin:10px;
+    padding:10px;
+}
+.right-side {
+    grid-area: right;
+    background-color: transparent;
+    margin: 10px;
+    padding: 10px;
+}
+.left-side > .top {
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+}
+.top > h1
+{
+    padding:10px;
+    font-size:3rem;
+    color:#333;
+}
+.left-side-key-features
+{
+    display:grid;
+    grid-template-areas:"list list2"
+        "list3 list4"
+        "list5 list6";
+    background-color:transparent;
+}
+.left-side-key-features-list-1 {
+    grid-area: list;
+    background-color: transparent;
+    font-size: 2rem;
+    padding: 5px;
+}
+.left-side-key-features-list-2 {
+    grid-area: list2;
+    background-color: transparent;
+    font-size: 2rem;
+    padding: 5px;
+}
+.left-side-key-features-list-3 {
+    grid-area: list3;
+    background-color: transparent;
+    font-size: 2rem;
+    padding: 5px;
+}
+.left-side-key-features-list-4 {
+    grid-area: list4;
+    background-color: transparent;
+    font-size: 2rem;
+    padding: 5px;
+}
+.left-side-key-features-list-5 {
+    grid-area: list5;
+    background-color: transparent;
+    font-size: 2rem;
+    padding: 5px;
+}
+.left-side-key-features-list-6 {
+    grid-area: list6;
+    background-color: transparent;
+    font-size: 2rem;
+    padding: 5px;
+}
+.grv > h1 {
+    padding: 10px;
+    font-size: 3rem;
+    color: #333;
+}
+.grid {
+    width: 100%;
+    max-height: 50rem;
+    background-color: transparent;
+    margin-top: -15px;
+    overflow: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+}
+.grid::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+.enquiry-form {
+    width: 100%;
+    height: 45%;
+    background-color: transparent;
+    padding: 10px;
+}
+.enquiry-form > .form-control
+{
+    margin-top:10px;
+    max-width:100%;
+    border-radius:5px;
+    border-color:#ccc;
+}
+.enquiry-form > h3 {
+    padding: 10px;
+    font-size: 2rem;
+    color: #333;
+
+}
+.enquiry-form > .btn {
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #006495;
+}
+.enquiry-form  .fa
+{
+    position:relative;
+    left:25rem;
+}
+.Interview-Questions {
+    width: 100%;
+    height: 40%;
+    background-color: transparent;
+    padding: 10px;
+}
+.Interview-Questions > h3 {
+    padding: 10px;
+    font-size: 2rem;
+    color: #333;
+}
+.Interview-Questions .fa {
+    position: relative;
+    left: 22rem;
+}
+.myul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 10px;
+}
+
+    .myul li {
+        flex: 1 1 calc(20% - 25px); /* 4 buttons per row with gap */
+        min-width: 100px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px 1px gray;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .myul li:hover {
+            transform: scale(1.03);
+            box-shadow: 3px 3px 15px 2px #888;
+        }
+
+        .myul li a {
+            display: block;
+            padding: 15px 10px;
+            color: #fff;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            text-decoration: none;
+            border-radius: 8px;
+        }

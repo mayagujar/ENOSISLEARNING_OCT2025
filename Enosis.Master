@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Enosis.master.cs" Inherits="ENOSISLEARNING.Enosis" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/enosis.css" rel="stylesheet" />
+    <!-- Font Awesome CDN (version 6) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="left">
+                <img src="Images/enosislogo.PNG" alt="" />
+            </div>
+            <div class="right">
+                <div class="nav-button">
+                    <i class="fas fa-graduation-cap" style="color:#f0ad4e"></i>
+                    <a href="#">Apply For Internship</a>
+                </div> 
+                <div class="nav-button">
+                    <i class="fas fa-lightbulb" style="color:#55acee"></i>
+                    <a href="#">Apply For Job</a>
+                </div>  
+                <div class="nav-button">
+                    <i class="fas fa-upload" style="color:#25d366"></i>
+                    <a href="#">Upload Resume</a>
+                </div> 
+                <div class="nav-button">
+                    <i class="fa-brands fa-telegram" style="color:#d9534f"></i>
+                    <a href="#">Request For Demo</a>
+                </div> 
+                <div class="nav-button">
+                    <i class="fa-brands fa-whatsapp" style="color:#0064b0"></i>
+                    <a href="#">7757012052</a>
+                </div>  
+                <div class="nav-button">
+                    <i class="fas fa-user" style="color:#0064b0"></i>
+                    <a href="#">Log-in</a>
+                </div> 
+            </div>
+        </nav>
+        <hr />
+        <div class="menu">
+            <div><a href='Index.aspx'>HOME</a></div>
+            <div><a href="courses.aspx">COURSES</a></div>
+            <div><a href='Tutorials.aspx'>TUTORIALS</a></div>
+            <div><a href='Assignments.aspx'>ASSIGNMENT</a></div>
+            <div style="width:320px;margin-left:8px;"><a href="Interview_Questions.aspx?lag=SQLSERVER">INTERVIEW QUESTIONS & ANSWERS</a></div>
+            <div><a class="menu-button" >KnowledgeBase</a></div>
+            <div style="width:180px;margin-left:8px;"><a href='QuestionPapers.aspx'>Question Papers</a></div>
+            <div><a href='Articles.aspx'>Articles</a></div>
+            <div><a href='DownLoads.aspx'>DownLoads</a></div>
+            <div><a href="clients.aspx">Clients</a></div>
+            <div><a href='FAQ.aspx'>FAQ</a></div>
+            <div><a class="dropbtn" >Books</a></div>
+            <div><a href='contact.aspx'>Contact</a></div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
